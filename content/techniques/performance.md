@@ -12,15 +12,13 @@ But since Nest provides framework-independence, you can easily migrate between t
 
  First, we need to install the required package:
 
-```bash
+```nPM
+@@swithPACK
 $ npm i --save @nestjs/platform-fastify;# For Node Package Manager
+
+@@switch
+$ pnpm add --save @nestjs/platform-fastify
 ```
-<details>
-<summary>Other Package Manager</summary>
-
-     $ pnpm add --save @nestjs/platform-fastify
-
-</details>
 
 > warning **Warning** When using `@nestjs/platform-fastify` version `>=7.5.0` and `apollo-server-fastify`, GraphQL playground may not work due to incompatibility with `fastify` version `^3.0.0`. You may want to use the unstable `apollo-server-fastify` version `^3.0.0-alpha.3` or temporarily choose express instead.
 
